@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: rgb(255, 121, 120);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  width: 80%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* read section  */
+.read {
+  color: white;
+  max-width: 50%;
+}
+.read-head {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+.read-desc {
+  color: rgb(253, 196, 197);
+  max-width: 400px;
+  font-weight: 500;
+}
+/* end of read section */
+/* inputs section  */
+.inputs {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  min-width: 50%;
+}
+.trail {
+  background-color: rgb(93, 84, 163);
+  padding: 20px;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 40px;
+  box-shadow: 0px 10px rgba(0, 0, 0, 0.2);
+  color: rgb(214, 208, 255);
+}
+.bold-trail {
+  color: white;
+  font-weight: 700;
+}
+.formulaire {
+  background-color: white;
+  border-radius: 7px;
+  padding: 40px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 20px;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+input {
+  border: solid 2px rgb(229, 185, 184);
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+}
+.input-err {
+  background-image: url(/images/icon-error.svg);
+  background-position: 95% center;
+  background-repeat: no-repeat;
+}
+.input-err-msg {
+  color: rgb(229, 185, 184);
+  font-size: 0.8rem;
+}
+input:invalid {
+  border: solid 2px rgb(229, 185, 184);
+}
+input:valid {
+  border: solid 2px rgb(55, 204, 138);
+}
+button {
+  padding: 15px;
+  font-size: 1rem;
+  color: rgb(225, 255, 250);
+  background-color: rgb(55, 204, 138);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.2);
+}
+.terms {
+  text-align: center;
+  font-size: 0.7rem;
+  color: rgb(201, 199, 210);
+  font-weight: 600;
+}
+.terms-special {
+  color: rgb(214, 142, 145);
+}
+/* end of inputs section  */
